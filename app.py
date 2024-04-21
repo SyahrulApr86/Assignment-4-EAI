@@ -57,7 +57,6 @@ def scrape_books(category_url=None, max_pages=3):
 
 
 @app.route('/', methods=['GET'])
-@app.route('/', methods=['GET'])
 def index():
     categories = get_categories()
     category_query = request.args.get('category', '')
